@@ -1,0 +1,13 @@
+private Profil profil = new Profil(67,165,35,0);
+    private float img = (float) 32.2;
+    private String msg = "Trop de graisse";
+
+    @Test
+    public void getImg() {
+        Assert.assertEquals(img, profil.getImg(), (float)0.1);
+    }
+
+    @Test
+    public void getMessage() {
+        Assert.assertEquals(msg, profil.getMessage());
+    }

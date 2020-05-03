@@ -1,0 +1,46 @@
+Les commandes à taper :
+ 1  tar xvfz lame-3.100.tar.gz
+    2  cd ~/lame-3.100
+    3  ./configure --prefix=/usr/local/x86_64-w64-mingw32 --host=x86_64-w64-mingw32 --enable-static --disable-shared --disable-decoder --enable-nasm
+    4  make clean && make
+    5  make install
+    6  cd ~
+    7  tar xvfz fdk-aac-2.0.1.tar.gz
+    8  cd ~/fdk-aac-2.0.1
+    9  ./configure --prefix=/usr/local/x86_64-w64-mingw32 --host=x86_64-w64-mingw32 --enable-shared=no
+   10  make clean && make
+   11  make install
+   12  cd ~
+   13  tar xvfz x264-snapshot-20171214-2245.tar.bz2
+   14  tar xvjf x264-snapshot-20171214-2245.tar.bz2
+   15  cd ~/x264-snapshot-20171214-2245
+   16  ./configure --prefix=/usr/local/x86_64-w64-mingw32 --cross-prefix=x86_64-w64-mingw32 --host=x86_64-w64-mingw32 --enable-static --bit-depth=8 --enable-win32thread
+   17  ./configure --prefix=/usr/local/x86_64-w64-mingw32 --cross-prefix=x86_64-w64-mingw32- --host=x86_64-w64-mingw32 --enable-static --bit-depth=8 --enable-win32thread
+   18  ./configure --prefix=/usr/local/x86_64-w64-mingw32 --cross-prefix=x86_64-w64-mingw32- --host=x86_64-w64-mingw32 --enable-static --bit-depth=8 --enable-win32thread
+   19  make clean && make
+   20  make install
+   21  cd ~
+   22  tar xvjf ffmpeg-4.2.2.tar.bz2
+   23  cd ~/ffmpeg-4.2.2
+   24  CPPFLAGS="SCPPFLAGS -l/usr/local/x86_64-w64-mingw32/include" ./configure --extra-ldflags='-L/usr/local/x86_64-w64-mingw32/lib' --prefix=/usr/local/x86_64-w64-mingw32 --cross-prefix=x86_64-w64-mingw32- --target-os=mingw32 --enable-win32threads --arch=x86_64 --enable-runtime-cpudetect --disable-debug --enable-static --disable-shared --disable-ffplay --disable-ffserver --enable-gpl --enable-version3 --enable-monfree --enable-libmp3lame --enable-libfdk-aac --enable-libx264
+   25  CPPFLAGS="SCPPFLAGS -l/usr/local/x86_64-w64-mingw32/include" ./configure --extra-ldflags='-L/usr/local/x86_64-w64-mingw32/lib' --prefix=/usr/local/x86_64-w64-mingw32 --cross-prefix=x86_64-w64-mingw32- --target-os=mingw32 --enable-w32threads --arch=x86_64 --enable-runtime-cpudetect --disable-debug --enable-static --disable-shared --disable-ffplay --disable-ffserver --enable-gpl --enable-version3 --enable-monfree --enable-libmp3lame --enable-libfdk-aac --enable-libx264
+   26  CPPFLAGS="$CPPFLAGS -l/usr/local/x86_64-w64-mingw32/include" ./configure --extra-ldflags='-L/usr/local/x86_64-w64-mingw32/lib' --prefix=/usr/local/x86_64-w64-mingw32 --cross-prefix=x86_64-w64-mingw32- --target-os=mingw32 --enable-w32threads --arch=x86_64 --enable-runtime-cpudetect --disable-debug --enable-static --disable-shared --disable-ffplay --disable-ffserver --enable-gpl --enable-version3 --enable-nonfree --enable-libmp3lame --enable-libfdk-aac --enable-libx264
+   27  CPPFLAGS="$CPPFLAGS -l/usr/local/x86_64-w64-mingw32/include" ./configure --extra-ldflags='-L/usr/local/x86_64-w64-mingw32/lib' --prefix=/usr/local/x86_64-w64-mingw32 --cross-prefix=x86_64-w64-mingw32- --target-os=mingw32 --enable-w32threads --arch=x86_64 --enable-runtime-cpudetect --disable-debug --enable-static --disable-shared --disable-ffplay --disable-ffserver --enable-gpl --enable-version3 --enable-nonfree --enable-libmp3lame --enable-libfdk-aac --enable-libx264
+   28  ./configure --help
+   29  CPPFLAGS="$CPPFLAGS -l/usr/local/x86_64-w64-mingw32/include" ./configure --extra-ldflags='-L/usr/local/x86_64-w64-mingw32/lib' --prefix=/usr/local/x86_64-w64-mingw32 --cross-prefix=x86_64-w64-mingw32- --target-os=mingw32 --enable-w32threads --arch=x86_64 --enable-runtime-cpudetect --disable-debug --enable-static --disable-shared --disable-ffplay --enable-gpl --enable-version3 --enable-nonfree --enable-libmp3lame --enable-libfdk-aac --enable-libx264
+   30  tar xvjf ffmpeg-3.4.1.tar.bz2
+   31  history
+
+
+xhmikosr.1f0.de/tools/msys/MSYS_MinGW-w64_GCC_710_x86-64_Full.7z
+
+./configure --prefix=/usr/local/x86_64-w64-mingw32 --host=x86_64-w64-mingw32 --enable-static --disable-shared --disable-decoder --enable-nasm
+
+./configure --prefix=/usr/local/x86_64-w64-mingw32 --host=x86_64-w64-mingw32 --enable-shared=no
+
+./configure --prefix=/usr/local/x86_64-w64-mingw32 --cross-prefix=x86_64-w64-mingw32- --host=x86_64-w64-mingw32 --enable-static --bit-depth=8 --enable-win32thread
+
+
+CPPFLAGS="$CPPFLAGS -I/usr/local/x86_64-w64-mingw32/include" ./configure --extra-ldflags='-L/usr/local/x86_64-w64-mingw32/lib' --prefix=/usr/local/x86_64-w64-mingw32 --cross-prefix=x86_64-w64-mingw32- --target-os=mingw32 --enable-w32threads --arch=x86_64 --enable-runtime-cpudetect --disable-debug --enable-static --disable-shared --disable-ffplay --enable-gpl --enable-version3 --enable-nonfree --enable-libmp3lame --enable-libfdk-aac --enable-
+
+GRANT ALL PRIVILEGES ON open4010.* TO 'Lebeau'@'localhost' IDENTIFIED BY 'Lebeauadmin19' WITH GRANT OPTION;
