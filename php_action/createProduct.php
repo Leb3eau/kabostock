@@ -59,7 +59,7 @@ if ($_POST) {
             if ($connect->query($sql) === TRUE) {
 
                 for ($x = 0; $x < count($_POST['productName']); $x++) {
-                    $sql = "INSERT INTO product VALUES (NULL, '" . $_POST['productName'][$x] . "' ,'" . $_POST['quantity'][$x] . "', '$brandName', '" . $_POST['ratea'][$x] . "', 1, '$paymentType', '$paymentMode', '$date_livraison', '$url', '" . $_POST['quantity'][$x] . "', '$productStatus')";
+                    $sql = "INSERT INTO product VALUES (NULL, '" . $_POST['productName'][$x] . "', '" . $_POST['ratea'][$x] . "' , '$brandName','" . $_POST['quantity'][$x] . "', 1, '$paymentType', '$paymentMode', '$date_livraison', '$url', '" . $_POST['quantity'][$x] . "', '$productStatus')";
 
 
                     if ($connect->query($sql) === TRUE) {

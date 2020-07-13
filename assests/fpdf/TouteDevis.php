@@ -77,7 +77,8 @@ while ($row = $orderItemResult->fetch_array()) {
     $prix = $row[3]/($row[2]*1.18);
     
     $y = $koffi->GetY();
-    $koffi->MultiCell(105, 4, utf8_decode(strtoupper($row[4])."\n"." \t\t\t\tTVA : ".number_format($prix*$row[2], 2, ",", " ")." x 18% = ".number_format($prix*$row[2]*0.18, 2, ",", " ")), "LR", "L");
+    //$koffi->MultiCell(105, 4, utf8_decode(strtoupper($row[4])."\n"." \t\t\t\tTVA : ".number_format($prix*$row[2], 2, ",", " ")." x 18% = ".number_format($prix*$row[2]*0.18, 2, ",", " ")), "LR", "L");
+    $koffi->MultiCell(105, 6, utf8_decode(strtoupper($row[4])), "LR", "L");
     $koffi->SetXY(115, $y);
     $koffi->Cell(20, 5, utf8_decode($row[2]), "LR", 0, "C");
     $koffi->Cell(20, 5, number_format($prix, 2, ",", " "), "LR", 0, "C");

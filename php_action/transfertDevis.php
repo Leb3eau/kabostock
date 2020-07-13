@@ -71,7 +71,7 @@ if ($_POST) {
         } // while	
     } // /while quantity
     
-        $updateDevisTable = "UPDATE devis SET devis_status = 2 WHERE devis_id = " . $id . "";
+        $updateDevisTable = "UPDATE devis SET devis_status = 1 WHERE devis_id = " . $id . "";
         $connect->query($updateDevisTable);
 
         $valid['success'] = TRUE;
